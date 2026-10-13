@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Healthy",
+    "slug": "healthy",
+    "version": "1.4.0",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/11111111-2222-4333-8444-555555555555"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "11111111-2222-4333-8444-555555555555"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "dev.salmanlabs.healthy",
+      "buildNumber": "12"
+    },
+    "android": {
+      "package": "dev.salmanlabs.healthy",
+      "versionCode": 12
+    }
+  }
+}

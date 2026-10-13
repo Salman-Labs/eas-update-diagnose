@@ -1,0 +1,62 @@
+{
+  "name": "eas-update-diagnose",
+  "version": "0.1.0",
+  "description": "Diagnose why a published EAS Update never reaches a device by checking app config, eas.json, native projects, and the update manifest.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Salman Labs",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "eas-update-diagnose": "dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salman-Labs/eas-update-diagnose.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Salman-Labs/eas-update-diagnose/issues"
+  },
+  "homepage": "https://github.com/Salman-Labs/eas-update-diagnose#readme",
+  "keywords": [
+    "expo",
+    "eas",
+    "eas-update",
+    "expo-updates",
+    "ota",
+    "diagnostic",
+    "runtime-version",
+    "ci"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "pretest": "npm run build",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.68",
+    "vitest": "^3.2.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
