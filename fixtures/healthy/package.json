@@ -1,0 +1,7 @@
+{
+  "name": "healthy-fixture",
+  "private": true,
+  "dependencies": {
+    "expo-updates": "~0.28.17"
+  }
+}
